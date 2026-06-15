@@ -3,34 +3,41 @@ body {
   background: #111;
   color: white;
   margin: 0;
-  text-align: center;
+  padding: 0;
 }
 
 h1 {
-  background: #222;
+  background: #1c1c1c;
+  margin: 0;
   padding: 15px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .layout {
   display: flex;
+  flex-direction: column;
 }
 
 .left, .right {
-  flex: 1;
   padding: 10px;
 }
 
 button {
-  padding: 10px;
-  margin: 5px;
-  background: orange;
+  width: 100%;
+  padding: 14px;
+  margin: 5px 0;
+  font-size: 16px;
   border: none;
-  cursor: pointer;
+  border-radius: 8px;
+  background: #ffb703;
+  font-weight: bold;
 }
 
 .table {
   background: #222;
-  padding: 10px;
-  margin: 5px;
-  cursor: pointer;
+  padding: 15px;
+  margin: 8px 0;
+  border-radius: 8px;
+  font-size: 16px;
 }
