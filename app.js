@@ -137,13 +137,18 @@ function sendKitchen() {
 
 // 🚪 CLOSE TABLE
 function closeTable() {
-  logAction(`Closed Table ${currentTable.id}`);
+  if (!currentTable) return;
 
   currentTable.orders = [];
   currentTable.total = 0;
+  currentTable.payment = "CLOSED";
+
+  alert("Table Closed");
+
+  currentTable = null;
 
   renderTables();
-  renderOrder();
+  document.getElementById("orderPanel").innerHTML = "Select a table";
 }
 
 // 📋 LOG ACTION
