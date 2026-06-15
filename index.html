@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BiteFlow POS - Waiter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ffb703">
+</head>
+
+<body>
+
+<h1>🍽️ BiteFlow POS (Waiter)</h1>
+
+<button onclick="addTable()">➕ Add Table</button>
+<button onclick="showMyLogs()">📋 My Logs</button>
+
+<div class="layout">
+
+  <div class="left">
+    <h2>Tables</h2>
+    <div id="tables"></div>
+  </div>
+
+  <div class="right">
+    <h2>Order</h2>
+    <div id="orderPanel">Select Table</div>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
